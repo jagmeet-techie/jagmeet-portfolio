@@ -38,16 +38,16 @@ const AboutDetails = () => {
             viewport={{ once: true }}
             className="font-light text-xs sm:text-sm md:text-base mt-4 leading-relaxed"
           >
-            Hi, I’m <strong className="text-yellow-300">Jagmeet Singh</strong> — a passionate developer, creative thinker, and lifelong learner. I specialize in building user-centric digital experiences that blend functionality with stunning design. Whether it's a portfolio, product interface, or a full-scale web app, I enjoy crafting projects that solve real-world problems.
+            Hi, I&apos;m <strong className="text-yellow-300">Jagmeet Singh</strong> — a passionate developer, creative thinker, and lifelong learner. I specialize in building user-centric digital experiences that blend functionality with stunning design. Whether it&apos;s a portfolio, product interface, or a full-scale web app, I enjoy crafting projects that solve real-world problems.
             <br />
             <br />
-            Currently, I’m focused on expanding my skills in <strong>React</strong>, <strong>Tailwind CSS</strong>, and modern web development while also exploring the potential of <strong>AI tools</strong> and <strong>IoT innovations</strong>. I believe in building with purpose, learning continuously, and giving back through community-driven projects.
+            Currently, I&apos;m focused on expanding my skills in <strong>React</strong>, <strong>Tailwind CSS</strong>, and modern web development while also exploring the potential of <strong>AI tools</strong> and <strong>IoT innovations</strong>. I believe in building with purpose, learning continuously, and giving back through community-driven projects.
             <br />
             <br />
-            When I’m not coding, you’ll find me sketching ideas, exploring tech trends, or dreaming up my next big project.
+            When I&apos;m not coding, you&apos;ll find me sketching ideas, exploring tech trends, or dreaming up my next big project.
             <br />
             <br />
-            Let’s connect and create something awesome!
+            Let&apos;s connect and create something awesome!
           </motion.p>
         </ItemLayout>
 

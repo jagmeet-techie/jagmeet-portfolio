@@ -12,7 +12,7 @@ const blogFade = {
   },
 };
 
-const aboutText = `When I'm not immersed in code, I'm wandering through books, paths, and ideas. I love traveling to unfamiliar places — both on maps and in my mind. Teaching fills my heart, learning keeps it alive, and curiosity is my compass. I'm drawn to stories, to creativity, and to the joy of discovering something new, every single day.I love watching, Harry potter movies they are my happy place, I know basic french too, Bonjour Comment Ca Va?(Hehe),I love writing poems in my leasure time.Thank you for your time  `;
+const aboutText = `When I'm not immersed in code, I'm wandering through books, paths, and ideas. I love traveling to unfamiliar places — both on maps and in my mind. Teaching fills my heart, learning keeps it alive, and curiosity is my compass. I'm drawn to stories, to creativity, and to the joy of discovering something new, every single day. I love watching Harry Potter movies; they are my happy place. I know basic French too: Bonjour Comment Ça Va? (Hehe). I love writing poems in my leisure time. Thank you for your time.`;
 
 export default function BlogPage() {
   const [typedText, setTypedText] = useState("");
