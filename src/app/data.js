@@ -5,7 +5,6 @@ export const projectsData = [
     description: "Reimagined version of obys agency website",
     date: "2024-02-09",
     demoLink: "https://jagmeet-techie.github.io/Final-Project/",
-    techStack: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 2,
@@ -13,23 +12,23 @@ export const projectsData = [
     description: "Reimagined version of website of fanta",
     date: "2024-07-12",
     demoLink: "https://jagmeet-techie.github.io/Project-Fanta/",
-    techStack: ["HTML", "CSS", "JavaScript"],
   },
   {
     id: 3,
     name: "PadhleBhai",
-    description: "A productivity app for students with Pomodoro timer, to-do list, study groups, motivation quotes, and more.",
+    description:
+      "A productivity app for students with Pomodoro timer, to-do list, study groups, motivation quotes, and more.",
     date: "2025-07-01",
     demoLink: "https://student-toolkit-34930.web.app/",
-    techStack: ["React", "Firebase", "TailwindCSS"],
   },
   {
     id: 4,
     name: "Roxie",
-    description: "Mental health–focused AI voice assistant that listens, thinks, and responds using Whisper, GPT, and TTS.",
+    description:
+      "Mental health–focused AI voice assistant that listens, thinks, and responds using Whisper, GPT, and TTS.",
     date: "2025-07-12",
-    demoLink: "https://www.linkedin.com/posts/jagmeet-singh-530961302_ai-voiceassistant-opensource-activity-7349821393011687425-Wx5b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1iO7QBEnbCorBWsHw0CHK3INrBsGO2AoY",
-    techStack: ["Whisper", "OpenAI", "Python", "TTS", "React"],
+    demoLink:
+      "https://www.linkedin.com/posts/jagmeet-singh-530961302_ai-voiceassistant-opensource-activity-7349821393011687425-Wx5b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE1iO7QBEnbCorBWsHw0CHK3INrBsGO2AoY",
   },
   {
     id: 5,
@@ -37,7 +36,6 @@ export const projectsData = [
     description: "Pixelrunner game made using pygame",
     date: "2025-05-30",
     demoLink: "https://github.com/jagmeet-techie/Pixel-Runner-Game",
-    techStack: ["Python", "Pygame"],
   },
   {
     id: 6,
@@ -45,30 +43,31 @@ export const projectsData = [
     description: "A Weather forecasting webapp",
     date: "2025-06-12",
     demoLink: "https://jagmeet-techie.github.io/Weatherly/",
-    techStack: ["HTML", "CSS", "JavaScript", "OpenWeatherAPI"],
   },
   {
     id: 7,
     name: "Sign Language Translator",
-    description: "Sign language translator using opencv (Currently under progress)",
+    description:
+      "Sign language translator using opencv (Currently under progress)",
     date: "2022-10-01",
     demoLink: "https://Signbuddy.example.com",
-    techStack: ["Python", "OpenCV", "MediaPipe"],
   },
   {
     id: 8,
     name: "IoT-based Smart Ring for Women Safety",
     description: "Currently in R&D stage",
     date: "2024-09-29",
-    demoLink: "https://example.com",
-    techStack: ["IoT", "Arduino", "GPS", "GSM", "C++"],
+    demoLink: "https://www.example.com",
   },
 ];
 
 export const BtnList = [
-  { label: "Home", link: "/", icon: "home", newTab: false },
+  { label: "Hobbies", link: "/hobbies", icon: "hobbies", newTab: false },
+  
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
+  { label: "Blog", link: "/blog", icon: "blog", newTab: false },
+  { label: "Resume", link: "/resume.pdf", icon: "resume", newTab: true },
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
@@ -93,5 +92,11 @@ export const BtnList = [
     link: "/resume.pdf",
     icon: "resume",
     newTab: true,
+  },
+  {
+    label: "Hobbies",
+    link: "/hobbies",
+    icon: "hobbies",
+    newTab: false,
   },
 ];
