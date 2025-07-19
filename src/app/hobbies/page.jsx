@@ -1,8 +1,8 @@
-'use client';
+&apos;use client&apos;;
 
-import React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
+import React from &apos;react&apos;;
+import Link from &apos;next/link&apos;;
+import { motion } from &apos;framer-motion&apos;;
 
 
 const HobbiesPage = () => {

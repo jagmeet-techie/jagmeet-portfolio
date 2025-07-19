@@ -1,7 +1,7 @@
-'use client';
-import React from 'react';
+&apos;use client&apos;;
+import React from &apos;react&apos;;
 
-import { motion } from 'framer-motion';
+import { motion } from &apos;framer-motion&apos;;
 
 export default function TravelPage() {
   return (
@@ -21,7 +21,7 @@ export default function TravelPage() {
       >
         I visited the peaceful heights of McLeodganj and found magic beyond spells.
         Foggy hills, Tibetan chants, and the sound of silence — it all felt like a hidden part of Hogwarts.
-        Here's my photo story, with a sprinkle of soul 🧘‍♂️.
+        Here&apos;s my photo story, with a sprinkle of soul 🧘‍♂️.
       </motion.p>
 
       <motion.div 

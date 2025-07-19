@@ -1,6 +1,6 @@
-'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
+&apos;use client&apos;;
+import React from &apos;react&apos;;
+import { motion } from &apos;framer-motion&apos;;
 
 export default function PoemsPage() {
   const poems = [
@@ -24,7 +24,7 @@ export default function PoemsPage() {
         "Through phoenix flames and healing rain.",
         "With every fall, a brighter spark,",
         "My spirit glows in night so dark.",
-        "Chains can't hold the soul I feed,",
+        "Chains can&apos;t hold the soul I feed,",
         "For fire lives in every need.",
         "I dance with scars that proudly gleam,",
         "A rebel heart, an endless dream."
@@ -52,7 +52,7 @@ export default function PoemsPage() {
         "Would I have found a way to you?",
         "A heart too shy, a truth too late,",
         "I gave it all to hands of fate.",
-        "Now dust and ink are all that's left,",
+        "Now dust and ink are all that&apos;s left,",
         "Of words unsaid, of love bereft."
       ]
     },
