@@ -42,7 +42,7 @@ export default function PoemsPage() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        📝 My Heart's Verses
+        📝 My Heart&rsquo;s Verses
       </motion.h1>
 
       <div className="space-y-12 max-w-3xl mx-auto">
