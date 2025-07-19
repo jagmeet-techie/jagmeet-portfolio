@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-
 import { motion } from 'framer-motion';
 
 export default function TravelPage() {
@@ -29,16 +28,17 @@ export default function TravelPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <img src="/mcleod1.jpg" alt="mountain" className="rounded-lg shadow-md" />
-        <img src="/mcleod2.jpg" alt="cafe" className="rounded-lg shadow-md" />
-        <img src="/mcleod3.jpg" alt="sunset" className="rounded-lg shadow-md" />
+        <img src="/mcleod1.jpg" alt="Snowy mountain in McLeodganj" className="rounded-lg shadow-md" />
+        <img src="/mcleod2.jpg" alt="Cozy café in the hills" className="rounded-lg shadow-md" />
+        <img src="/mcleod3.jpg" alt="Golden sunset from the valley" className="rounded-lg shadow-md" />
       </motion.div>
 
-      <motion.div className="mt-10"
+      <motion.div 
+        className="mt-10 text-lg italic text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        
+        “Not all those who wander are lost.” – J.R.R. Tolkien
       </motion.div>
     </div>
   );
