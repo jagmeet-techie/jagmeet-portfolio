@@ -40,3 +40,116 @@
 body {
   cursor: none;
 }
+.hobbies-container {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: url('/hogwarts-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f8f8f2;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.hobbies-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* overlay */
+  z-index: 0;
+}
+
+.hobbies-title {
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  color: #ffd700;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+.hobbies-subtitle {
+  font-size: 1.3rem;
+  margin: 1rem 0 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
+.hobby-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hobby-card h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.hobby-card p {
+  color: #dddddd;
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  color: #ffd700;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    flex-direction: row;
+  }
+}
+
+/* Hogwarts background */
+.hogwarts-bg {
+  background-image: url('/hogwarts-bg.jpg'); /* Put a nice hogwarts image in public folder */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 40%;
+}
+/* Fog Layer Animations */
+@keyframes moveFog {
+  0% { transform: translateX(-10%); opacity: 0.4; }
+  50% { transform: translateX(10%); opacity: 0.6; }
+  100% { transform: translateX(-10%); opacity: 0.4; }
+}
+
+.fog-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('/fog.png') repeat;
+  background-size: cover;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 5;
+  animation: moveFog 60s linear infinite;
+  mix-blend-mode: lighten;
+  filter: blur(10px);
+}

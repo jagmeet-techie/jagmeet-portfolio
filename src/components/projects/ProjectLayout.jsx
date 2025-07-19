@@ -1,28 +1,44 @@
+"use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 const item = {
-  hidden: { opacity: 0, y: 100 },
+  hidden: { opacity: 0, y: 80 },
   show: { opacity: 1, y: 0 },
 };
 
 const ProjectLink = motion(Link);
-const ProjectLayout = ({ name, description, date, demoLink }) => {
+
+const ProjectLayout = ({ name, description, date, demoLink, techStack }) => {
   return (
     <ProjectLink
       variants={item}
       href={demoLink}
-      target={"_blank"}
-      className=" text-sm md:text-base flex  items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full sm:w-[300px] aspect-square bg-zinc-900 border border-zinc-800 rounded-2xl shadow-lg hover:shadow-[0_0_30px_#a855f7] hover:scale-105 transition duration-300 ease-in-out p-6 flex flex-col justify-between"
     >
-      <div className="flex items-center justify-center space-x-2">
-        <h2 className="text-foreground">{name}</h2>
-        <p className="text-muted hidden sm:inline-block">{description}</p>
+      <div>
+        <h2 className="text-xl font-semibold text-white mb-2">{name}</h2>
+        <p className="text-sm text-zinc-300 line-clamp-3">{description}</p>
       </div>
-      <div className="self-end flex-1 mx-2 mb-1 bg-transparent border-b border-dashed border-muted" />
-      <p className="text-muted sm:text-foreground">
-        {new Date(date).toDateString()}
-      </p>
+
+      <div>
+        <div className="flex flex-wrap gap-2 mt-4">
+          {techStack?.map((tech, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 bg-violet-700/20 text-violet-400 text-xs rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <p className="text-right text-xs text-zinc-500 mt-4">
+          {new Date(date).toDateString()}
+        </p>
+      </div>
     </ProjectLink>
   );
 };

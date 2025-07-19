@@ -5,6 +5,8 @@ import {
   NotebookText,
   Palette,
   Phone,
+  MapPin,
+Wand2Icon,
   // Twitter, // Remove if you no longer use Twitter icon
   User,
 } from "lucide-react";
@@ -16,8 +18,8 @@ import { motion } from "framer-motion";
 
 const getIcon = (icon) => {
   switch (icon) {
-    case "home":
-      return <Home className="w-full h-auto" strokeWidth={1.5} />;
+    case "travel":
+      return <MapPin className="w-full h-auto" strokeWidth={1.5} />;
     case "about":
       return <User className="w-full h-auto" strokeWidth={1.5} />;
     case "projects":
