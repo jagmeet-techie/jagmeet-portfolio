@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        inter: ['var(--font-inter)']
+        inter: ['var(--font-inter)'],
+        // ADD THIS LINE:
+        'libre-baskerville': ['var(--font-libre-baskerville)'],
       },
       colors:{
         background: 'rgb(var(--background))',

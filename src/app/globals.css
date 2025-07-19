@@ -1,8 +1,9 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+/* No @import url here anymore */
 
 @layer base {
   :root {
@@ -10,7 +11,6 @@
     --foreground: 225 225 225;
     --muted: 115 115 115;
     --accent: 254 254 91;
-    /* hex value of rgb(254,254,91) color is  #FEFE5B  */
   }
 }
 
@@ -19,19 +19,24 @@
     animation-play-state: paused;
   }
 
+  /* Modified custom-bg */
   .custom-bg {
     @apply bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset hover:shadow-glass-sm;
+    animation: shimmer 10s infinite alternate ease-in-out; /* ADDED */
   }
 }
 
-@keyframes move {
-  0% {
-    transform: translate(0, 0);
+/* ADDED - NEW KEYFRAMES FOR SHIMMER */
+@keyframes shimmer {
+  0%, 100% {
+    box-shadow: inset 0 17px 5px -9px rgba(254,254,91, 0.05); /* Original inset shadow */
   }
-  100% {
-    transform: translate(100px, 100px);
+  50% {
+    box-shadow: inset 0 17px 5px -9px rgba(254,254,91, 0.1), /* Slightly more intense inset */
+                0 0 10px rgba(254,254,91, 0.2); /* Subtle outer glow */
   }
 }
-body, * {
-  cursor: url('/magic-wand.png'), auto;
+
+body {
+  cursor: none;
 }
