@@ -1,7 +1,7 @@
-&apos;use client&apos;;
-import React from &apos;react&apos;;
+'use client';
+import React from 'react';
 
-import { motion } from &apos;framer-motion&apos;;
+import { motion } from 'framer-motion';
 
 export default function TravelPage() {
   return (
