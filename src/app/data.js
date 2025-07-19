@@ -62,10 +62,11 @@ export const projectsData = [
 ];
 
 export const BtnList = [
-  { label: "Hobbies", link: "/hobbies", icon: "hobbies", newTab: false },
-  
+ 
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
+  { label: "Hobbies", link: "/hobbies", icon: " MapPin", newTab: false }, // 🎨 Better icon
+   
   { label: "Blog", link: "/blog", icon: "blog", newTab: false },
   { label: "Resume", link: "/resume.pdf", icon: "resume", newTab: true },
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
@@ -80,23 +81,5 @@ export const BtnList = [
     link: "https://www.linkedin.com/in/jagmeet-singh-530961302/",
     icon: "linkedin",
     newTab: true,
-  },
-  {
-    label: "Blog",
-    link: "/blog",
-    icon: "blog",
-    newTab: false,
-  },
-  {
-    label: "Resume",
-    link: "/resume.pdf",
-    icon: "resume",
-    newTab: true,
-  },
-  {
-    label: "Hobbies",
-    link: "/hobbies",
-    icon: "hobbies",
-    newTab: false,
   },
 ];
