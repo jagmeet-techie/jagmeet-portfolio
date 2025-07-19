@@ -65,7 +65,7 @@ export const BtnList = [
  
   { label: "About", link: "/about", icon: "about", newTab: false },
   { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Hobbies", link: "/hobbies", icon: " MapPin", newTab: false }, // 🎨 Better icon
+  { label: "Hobbies", link: "/hobbies", icon: "MapPin", newTab: false }, // 🎨 Better icon
    
   { label: "Blog", link: "/blog", icon: "blog", newTab: false },
   { label: "Resume", link: "/resume.pdf", icon: "resume", newTab: true },
